@@ -22,6 +22,8 @@ temp->parent = parent;
 temp->left = NULL;
 temp->right = NULL;
 
+
+
 return (temp);
 
 }
