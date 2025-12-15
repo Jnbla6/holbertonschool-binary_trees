@@ -21,7 +21,7 @@ if (temp == NULL)
 	return (NULL);
 
 
-if (parent->left != null)
+if (parent->left != NULL)
 	{
 	temp->left = parent->left;
 	parent->left->parent = temp;
