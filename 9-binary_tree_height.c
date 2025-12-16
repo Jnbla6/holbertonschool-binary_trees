@@ -6,16 +6,13 @@ int height;
 int right = 0;
 int left = 0;
 
-if (!tree)
+if (!tree || (!tree->left && !tree->right))
 return(0);
 
 binary_tree_height(tree->left);
 left += 1;
 binary_tree_height(tree->right);
 right += 1;
-
-right--;
-left--;
 
 if (right == left)
 height = right;
