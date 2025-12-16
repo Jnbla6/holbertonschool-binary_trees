@@ -11,13 +11,10 @@ return(0);
 
 binary_tree_height(tree->left);
 if (!tree->left || !tree->right)
-return;
-left += 1;
+return(left += 1);
 binary_tree_height(tree->right);
 if (!tree->left || !tree->right)
-return;
-right += 1;
-
+return(right += 1);
 
 if (right == left)
 {
