@@ -10,17 +10,20 @@ if (!tree)
 return(0);
 
 binary_tree_height(tree->left);
-if (!tree->left || !tree->right)
-return(left += 1);
+left += 1;
 binary_tree_height(tree->right);
-if (!tree->left || !tree->right)
-return(right += 1);
+right += 1;
+
+right - 1;
+left - 1;
 
 if (right == left)
-{
-    height = right;
-}
+height = right;
+else if (right > left)
+height = right;
+else if (left > right)
+height = left;
 
-return(height - 1);
+return(height);
 
 }
