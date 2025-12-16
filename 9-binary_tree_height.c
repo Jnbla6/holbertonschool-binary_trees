@@ -14,6 +14,9 @@ left += 1;
 binary_tree_height(tree->right);
 right += 1;
 
+right--;
+left--;
+
 if (right == left)
 height = right;
 else if (right > left)
