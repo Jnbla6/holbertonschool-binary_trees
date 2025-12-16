@@ -21,6 +21,6 @@ if (right == left)
     height = right;
 }
 
-return(height);
+return(height - 1);
 
 }
