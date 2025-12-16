@@ -9,8 +9,12 @@ if (!tree)
 return(0);
 
 binary_tree_height(tree->left);
+if (!tree)
+return(height);
 height += 1;
 binary_tree_height(tree->right);
+if (!tree)
+return(height);
 height += 1;
 
 return(height);
