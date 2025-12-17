@@ -15,7 +15,7 @@ int count = 0;
 if (!tree)
 return (0);
 
-while (!tree)
+while (tree)
 {
 tree = tree->parent;
 count++;
