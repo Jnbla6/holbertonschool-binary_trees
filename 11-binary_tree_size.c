@@ -16,12 +16,12 @@ return(0);
 while (tree->left)
 {
 tree = tree->left;
-count++;
+count += 1;
 }
 while (tree->right)
 {
 tree = tree->right;
-count++;
+count += 1;
 }
 return (count);
 }
