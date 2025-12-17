@@ -17,7 +17,7 @@ return (0);
 
 while (!tree)
 {
-tree->parent;
+tree = tree->parent;
 count++;
 }
 return (count);
