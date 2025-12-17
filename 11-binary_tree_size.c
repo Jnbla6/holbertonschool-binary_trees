@@ -10,25 +10,13 @@
 
 size_t binary_tree_size(const binary_tree_t *tree)
 {
-int count = 1;
-const binary_tree_t *rightree;
-const binary_tree_t *lefttree;
-rightree = tree;
-lefttree = tree;
+size_t righttree = 0;
+size_t lefttree = 0;
 
 if (!tree)
 return(0);
 
-while (lefttree->left)
-{
-lefttree = lefttree->left;
-count += 1;
-}
-
-while (rightree->right)
-{
-rightree = rightree->right;
-count += 1;
-}
-return (count);
+lefttree = binary_tree_size(tree->left);
+righttree = binary_tree_size(tree->right);
+return (lefttree + righttree + 1);
 }
