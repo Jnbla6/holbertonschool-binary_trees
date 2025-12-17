@@ -7,8 +7,6 @@ if (!tree)
 return (0);
 
 binary_tree_leaves(tree->left);
-if (!tree->left || !tree->right)
-count += 1;
 binary_tree_leaves(tree->right);
 if (!tree->left || !tree->right)
 count += 1;
