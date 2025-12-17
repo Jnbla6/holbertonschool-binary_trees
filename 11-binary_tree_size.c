@@ -14,7 +14,7 @@ size_t righttree = 0;
 size_t lefttree = 0;
 
 if (!tree)
-return(0);
+return (0);
 
 lefttree = binary_tree_size(tree->left);
 righttree = binary_tree_size(tree->right);
