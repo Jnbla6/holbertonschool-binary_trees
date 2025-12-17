@@ -15,8 +15,8 @@ if (!tree)
 return (count);
 
 if (!tree->left && !tree->right)
-return 1;
+return (1);
 
-return(binary_tree_leaves(tree->left) + binary_tree_leaves(tree->right));
+return (binary_tree_leaves(tree->left) + binary_tree_leaves(tree->right));
 
 }
