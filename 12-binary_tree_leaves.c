@@ -10,4 +10,6 @@ binary_tree_leaves(tree->right);
 if (!tree->left || !tree->right)
 return (1);
 
+return(0);
+
 }
