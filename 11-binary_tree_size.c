@@ -23,5 +23,5 @@ while (tree->right)
 tree = tree->right;
 count++;
 }
-return (count);
+return (count + 1);
 }
