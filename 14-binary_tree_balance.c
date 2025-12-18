@@ -29,12 +29,9 @@ int lefttree = 0;
 if (!tree)
 return(0);
 
-if (!tree->left && !tree->right)
-	return (0);
+lefttree = binary_tree_heightt(tree->left);
+righttree = binary_tree_heightt(tree->right);
 
-	lefttree = binary_tree_heightt(tree->left);
-	righttree = binary_tree_heightt(tree->right);
-
-	return (lefttree - righttree);
+return (lefttree - righttree);
 
 }
