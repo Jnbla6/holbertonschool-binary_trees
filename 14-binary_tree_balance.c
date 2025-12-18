@@ -8,7 +8,7 @@ int left_height = 0;
 int right_height = 0;
 
 if (!tree || (!tree->left && !tree->right))
-return (0);
+return (1);
 
 left_height = binary_tree_heightt(tree->left);
 right_height = binary_tree_heightt(tree->right);
