@@ -1,37 +1,44 @@
 #include "binary_trees.h"
 
-
-
-int binary_tree_heightt(const binary_tree_t *tree)
+/**
+ * binary_tree_height - حساب ارتفاع شجرة ثنائية
+ * @tree: جذر الشجرة
+ * 
+ * Return: ارتفاع الشجرة
+ *          إذا كانت الشجرة فارغة يرجع 0
+ */
+int binary_tree_height(const binary_tree_t *tree)
 {
-int left_height = 0;
-int right_height = 0;
+    int left_height, right_height;
 
-if (!tree || (!tree->left && !tree->right))
-return (1);
+    if (!tree)
+        return 0;
 
-left_height = binary_tree_heightt(tree->left);
-right_height = binary_tree_heightt(tree->right);
+    left_height = binary_tree_height(tree->left);
+    right_height = binary_tree_height(tree->right);
 
-if (left_height > right_height)
-return (left_height + 1);
-else
-return (right_height + 1);
+    if (left_height > right_height)
+        return left_height + 1;
+    else
+        return right_height + 1;
 }
 
-
-
+/**
+ * binary_tree_balance - حساب عامل التوازن لعقدة
+ * @tree: الجذر
+ * 
+ * Return: فرق الارتفاع بين اليسار واليمين
+ *          إذا كانت الشجرة فارغة يرجع 0
+ */
 int binary_tree_balance(const binary_tree_t *tree)
 {
-int righttree = 0;
-int lefttree = 0;
+    int left_height, right_height;
 
-if (!tree)
-return(0);
+    if (!tree)
+        return 0;
 
-lefttree = binary_tree_heightt(tree->left);
-righttree = binary_tree_heightt(tree->right);
+    left_height = binary_tree_height(tree->left);
+    right_height = binary_tree_height(tree->right);
 
-return (lefttree - righttree);
-
+    return left_height - right_height;
 }
