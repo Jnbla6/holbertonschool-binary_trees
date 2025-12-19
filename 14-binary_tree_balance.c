@@ -4,8 +4,8 @@
  * binary_tree_height - حساب ارتفاع شجرة ثنائية
  * @tree: جذر الشجرة
  *
- * Return: ارتفاع الشجرة
- *          إذا كانت الشجرة فارغة يرجع 0
+ * Return: 
+ *    
  */
 int binary_tree_heightt(const binary_tree_t *tree)
 {
@@ -24,11 +24,11 @@ int binary_tree_heightt(const binary_tree_t *tree)
 }
 
 /**
- * binary_tree_balance - حساب توازن شجرة ثنائية
- * @tree: جذر الشجرة
+ * binary_tree_balance 
+ * @tree: 
  *
- * Return: توازن الشجرة
- *          إذا كانت الشجرة فارغة يرجع 0
+ * Return: 
+ *      
  */
 int binary_tree_balance(const binary_tree_t *tree)
 {
